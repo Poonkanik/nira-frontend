@@ -1,0 +1,32 @@
+.hero-header {
+  width: 100%;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  padding: 10px 0; /* reduced height */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-emoji {
+  font-size: 35px;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.hero-title {
+  font-size: 38px; /* slightly smaller for balance */
+  font-weight: 700;
+  margin: 0;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  margin-top: 6px;
+}

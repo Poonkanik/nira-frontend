@@ -1,0 +1,26 @@
+.soap-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* 👇 FIX IMAGE SIZE */
+.soap-card img {
+  width: 100%;
+  height: 180px;          /* 🔥 CONTROL IMAGE HEIGHT */
+  object-fit: cover;      /* 🔥 Crop without stretching */
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+.soap-card h3 {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.soap-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}

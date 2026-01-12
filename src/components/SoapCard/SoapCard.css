@@ -1,0 +1,76 @@
+.soap-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.soap-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔥 IMAGE SIZE CONTROL */
+.soap-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.soap-card h3 {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.soap-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-cart {
+  flex: 1;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-buy {
+  flex: 1;
+  background: #2ea043;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cart:hover {
+  background: #0b5ed7;
+}
+.btn-buy:hover {
+  background: #218838;
+}
+
+.soap-card .rating {
+  margin-top: 8px;
+  color: #f0ad4e;
+}

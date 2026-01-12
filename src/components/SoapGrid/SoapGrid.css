@@ -1,0 +1,14 @@
+.soap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  padding: 25px;
+  background: #e9fbe9;
+}
+
+/* Force 5 per row on large screens */
+@media (min-width: 1200px) {
+  .soap-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
