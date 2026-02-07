@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-grid">
+
         {/* BRAND */}
         <div className="footer-section">
           <h3>Nira Soaps</h3>
@@ -21,7 +22,7 @@ const Footer = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/cart">Cart</Link></li>
             <li><Link to="/checkout">Checkout</Link></li>
-            <li><Link to="/quote">Contact</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -29,10 +30,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Customer Care</h4>
           <ul>
-            <li>Shipping Policy</li>
-            <li>Return Policy</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
+            <li><Link to="/shipping-policy">Shipping Policy</Link></li>
+            <li><Link to="/refund-policy">Return / Refund Policy</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/terms">Terms & Conditions</Link></li>
           </ul>
         </div>
 
@@ -41,8 +42,11 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <p>📍 Tamil Nadu, India</p>
           <p>📞 +91 9003713234</p>
-          <p>✉️ support@nirasoaps.com</p>
+          <p>
+            ✉️ <a href="mailto:poonkanikannan@gmail.com">poonkanikannan@gmail.com</a>
+          </p>
         </div>
+
       </div>
 
       <div className="footer-bottom">

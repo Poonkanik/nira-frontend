@@ -1,0 +1,17 @@
+.refund-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  justify-items: center;
+  font-size: larger;
+}
+
+.refund-container h1 {
+  color: #2e7d32;
+}
+
+.refund-container p,
+.refund-container li {
+  color: #444;
+  line-height: 1.7;
+}
