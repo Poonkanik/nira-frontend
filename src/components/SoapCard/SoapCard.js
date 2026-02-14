@@ -7,19 +7,22 @@ const SoapCard = ({ soap }) => {
   const { addToCart } = useCart();
   const navigate = useNavigate();
 
-const handleAddToCart = () => {
-  console.log("ADD TO CART CLICKED", soap);
-  addToCart(soap);
-};
-
+  const handleAddToCart = () => {
+    addToCart(soap);
+  };
 
   const handleBuyNow = () => {
     addToCart(soap);
     navigate("/checkout");
   };
 
+  // 👉 NEW: Navigate to detail page
+ const handleViewDetail = () => {
+  navigate(`/product/${soap.id}`);
+};
+
   return (
-    <div className="soap-card">
+   <div className="soap-card" onClick={handleViewDetail}>
       <img src={soap.image} alt={soap.name} />
       <h3>{soap.name}</h3>
       <p>{soap.notes}</p>
@@ -27,11 +30,23 @@ const handleAddToCart = () => {
       <div className="price">₹{soap.price}</div>
 
       <div className="btn-group">
-        <button className="btn-cart" onClick={handleAddToCart}>
+        <button
+          className="btn-cart"
+          onClick={(e) => {
+            e.stopPropagation(); // prevent card click
+            handleAddToCart();
+          }}
+        >
           Add to Cart
         </button>
 
-        <button className="btn-buy" onClick={handleBuyNow}>
+        <button
+          className="btn-buy"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleBuyNow();
+          }}
+        >
           Buy
         </button>
       </div>

@@ -3,6 +3,7 @@ import SoapCard from "../SoapCard/SoapCard";
 import "./SoapGrid.css";
 
 const SoapGrid = ({ soaps }) => {
+  
   return (
     <div className="soap-grid">
       {soaps.map((soap) => (
