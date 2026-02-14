@@ -13,8 +13,7 @@ import redSandal from "../assets/soaps/red_sandal.png";
 import redWine from "../assets/soaps/red_wine.png";
 import sandal from "../assets/soaps/sandal.png";
 import thulsi from "../assets/soaps/thulsi.png";
-import turmeric from "../assets/soaps/turmeric.png";
-import vetiver from "../assets/soaps/vettiver.png";
+
 
 const soapsData = [
   { id: 1, name: "Aravampoo Soap", notes: "Cooling | Skin refresh", image: aravampoo, rating: 4.5, price: 77 },
